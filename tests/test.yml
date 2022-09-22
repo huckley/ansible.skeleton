@@ -1,0 +1,12 @@
+---
+- hosts: all
+  become: True
+  roles:
+    - foo
+    - ../skeleton
+  tasks:
+
+  - name: test if apt-get update is working
+    command: apt-get update
+    args:
+      warn: false

@@ -1,0 +1,7 @@
+---
+# roles:
+  - name: foo
+    src: git+ssh://foo.git
+    version: "v0.0.0"
+
+#  collections:
